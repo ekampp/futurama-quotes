@@ -6,11 +6,11 @@ This exposes a simple JSON API for accessing Futurama quotes. It's also possible
 
 It exposes these endpoints:
 
-GET /quote/:id # => Return specific quote
-GET /quote/random # => Return random quote
-GET /quote/regex/:regex # => Return first match. Regular expression should omit enclosing slashes and should be URL encoded
-GET /quote/by/:person # => Return all quotes for the person
-POST /quote # => Add a new quote to the list
+* GET /quote/:id # => Return specific quote
+* GET /quote/random # => Return random quote
+* GET /quote/regex/:regex # => Return first match. Regular expression should omit enclosing slashes and should be URL encoded
+* GET /quote/by/:person # => Return all quotes for the person
+* POST /quote # => Add a new quote to the list
 
 And will return the quotes in this format:
 
