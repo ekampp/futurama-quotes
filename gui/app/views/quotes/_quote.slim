@@ -1,0 +1,14 @@
+- omit_person ||= false
+
+blockquote cite=quote.person
+  p= quote.text.html_safe
+
+  - unless omit_person
+    p= quote.person
+
+  p
+    = link_to 'permalink', show_path(quote)
+    - if !omit_person && quote.person.present?
+      = " | "
+      = link_to "all by #{quote.person}", by_path(quote.person)
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gui</title>
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-1.11.3.min.js' %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div style="margin-top: 10px">
+      <%= link_to 'random quote', root_path %>
+      |
+      <%= form_tag '/regex', style: 'display: inline-block;', method: :get do %>
+        <%= search_field_tag :regex, params[:regex], placeholder: 'Search for quote' %>
+      <% end -%>
+    </div>
+    <%= yield %>
+  </body>
+</html>

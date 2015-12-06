@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+system "bundle"
+system "bundle exec rake db:drop:all"
+system "bundle exec rake db:create"
+system "bundle exec rake db:migrate"
+system "bundle exec rake db:test:prepare"
+system "bundle exec rake db:seed"

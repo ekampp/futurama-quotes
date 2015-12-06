@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300);
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #000000;
+  color: #D1D1D1;
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+blockquote {
+  width: 400px;
+  margin: auto;
+}
+
+article {
+  &#quote {
+    padding-top: 40%;
+    text-align: center;
+  }
+
+  &#quotes {
+    blockquote {
+      display: inline-block;
+      width: 389px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}
+
+input, textarea {
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+input[type=submit] {
+  margin-top: 3px;
+}
+
+.flash {
+  position: fixed;
+  padding: 10px;
+
+  &.alert {
+    background-color: red;
+    color: #fff;
+  }
+}

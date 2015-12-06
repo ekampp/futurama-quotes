@@ -1,0 +1,4 @@
+section
+  article#quotes
+    h1= "By #{params[:person].titleize}"
+    = render partial: 'quote', collection: @quotes, locals: { omit_person: true }
